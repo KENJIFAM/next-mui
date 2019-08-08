@@ -21,11 +21,11 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true
   },
   "exclude": [
-    "node_modules",
-    "materials"
+    "node_modules"
   ],
   "include": [
     "next-env.d.ts",

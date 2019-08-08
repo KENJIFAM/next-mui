@@ -1,34 +1,40 @@
-import { NextPage } from 'next';
+import React from 'react';
+import { NextPage } from 'next/types';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import ProTip from '../src/components/ProTip';
+import Link from '../src/components/Link';
 
-const backgroundColor = '#eee'
-
-const Home: NextPage<{ userAgent: string }> = ({ userAgent }) => (
-  <>
-    <h1>Hello world! - user agent: {userAgent}</h1>
-    <div className='hello'>
-      <p>Hello World</p>
-      <style jsx>{`
-        $color: red;
-        .hello {
-          background-color: ${backgroundColor};
-          padding: 100px;
-          text-align: center;
-          transition: 100ms ease-in background;
-          &:hover {
-            color: $color;
-          }
-          @media only screen and (max-width: 480px) {
-            font-size: 20px;
-          }
-        }
-      `}</style>
-    </div>
-  </>
-);
-
-Home.getInitialProps = async ({ req }) => {
-  const userAgent = req ? req.headers['user-agent'] || '' : navigator.userAgent;
-  return { userAgent };
+const Copyright = () => {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="https://material-ui.com/">
+        Your Website
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'. Built with '}
+      <Link color="inherit" href="https://material-ui.com/">
+        Material-UI.
+      </Link>
+    </Typography>
+  );
 };
+
+const Home: NextPage<{}> = () => (
+  <Container maxWidth="sm">
+    <Box my={4}>
+      <Typography variant="h4" component="h1" gutterBottom>
+        Next.js with TypeScript example
+      </Typography>
+      <Link href="/about" color="secondary">
+        Go to the about page
+      </Link>
+      <ProTip />
+      <Copyright />
+    </Box>
+  </Container>
+);
 
 export default Home;
