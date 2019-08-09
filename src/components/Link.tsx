@@ -53,7 +53,7 @@ const RouterLink = (props: LinkProps) => {
   }
 
   return <MuiLink component={NextComposed} className={className} ref={innerRef} {...other} />;
-}
+};
 
 export default React.forwardRef<HTMLAnchorElement, LinkProps>((props, ref) => (
   <RouterLink {...props} innerRef={ref} />
