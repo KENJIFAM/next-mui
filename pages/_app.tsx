@@ -3,6 +3,7 @@ import NextApp, { Container } from 'next/app';
 import ThemeProvider from '@material-ui/styles/ThemeProvider';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../src/styles/theme';
+import Layout from '../src/containers/Layout';
 
 class App extends NextApp {
   componentDidMount() {
@@ -21,7 +22,9 @@ class App extends NextApp {
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </ThemeProvider>
       </Container>
     );

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { NextPage } from 'next/types';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
@@ -22,7 +22,7 @@ const Copyright = () => {
   );
 };
 
-const Home: NextPage<{}> = () => (
+const Home: NextPage<{}> = () => (    
   <Container maxWidth="sm">
     <Box my={4}>
       <Typography variant="h4" component="h1" gutterBottom>
