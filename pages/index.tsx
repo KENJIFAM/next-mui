@@ -5,36 +5,25 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import ProTip from '../src/components/ProTip';
 import Link from '../src/components/Link';
+import MainSession from '../src/containers/Home/MainSession/MainSession';
 
-const Copyright = () => {
+const Home: NextPage<{}> = () => {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'. Built with '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Material-UI.
-      </Link>
-    </Typography>
+    <>
+      <MainSession />
+      <Container maxWidth="sm">
+        <Box my={4}>
+          <Typography variant="h4" component="h1" gutterBottom>
+            Next.js with TypeScript example
+          </Typography>
+          <Link href="/about" color="secondary">
+            Go to the about page
+          </Link>
+          <ProTip />
+        </Box>
+      </Container>
+    </>
   );
 };
-
-const Home: NextPage<{}> = () => (    
-  <Container maxWidth="sm">
-    <Box my={4}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Next.js with TypeScript example
-      </Typography>
-      <Link href="/about" color="secondary">
-        Go to the about page
-      </Link>
-      <ProTip />
-      <Copyright />
-    </Box>
-  </Container>
-);
 
 export default Home;
