@@ -129,7 +129,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
       '0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2)',
     maxWidth: '200px',
     textAlign: 'center' as 'center',
-    fontFamily: '"Helvetica Neue",Helvetica,Arial,sans-serif',
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     fontSize: '0.875em',
     fontStyle: 'normal',
     fontWeight: 400,
