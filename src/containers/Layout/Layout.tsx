@@ -35,7 +35,8 @@ const useStyles = makeStyles(() => createStyles({
     marginTop: '76px'
   },
   footer: {
-    marginBottom: '30px'
+    marginBottom: '30px',
+    marginTop: '30px'
   }
 }));
 

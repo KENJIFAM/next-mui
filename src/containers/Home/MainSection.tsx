@@ -1,11 +1,11 @@
 import React from 'react';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import Parallax from '../../../components/Parallax';
-import { GridContainer, GridItem } from '../../../components/Grid';
-import { container, title } from '../../../styles/commonStyles';
+import Parallax from '../../components/Parallax';
+import { GridContainer, GridItem } from '../../components/Grid';
+import { container, title } from '../../styles/commonStyles';
 
-const MainSession: React.FC = () => {
+const MainSection: React.FC = () => {
   const classes = useStyles();
   return (
     <div>
@@ -16,7 +16,7 @@ const MainSession: React.FC = () => {
             justify="flex-end"
             alignItems="baseline"
           >
-            <GridItem xs={12} sm={12} md={6}>
+            <GridItem xs={8} sm={8} md={6}>
               <h1 className={classes.title}>Introducing StepOut version 0.1</h1>
               <h4 className={classes.text}>
                 Looking for a trainer or being a trainer? <br />
@@ -52,4 +52,4 @@ const useStyles = makeStyles(() => createStyles({
   }
 }));
 
-export default MainSession;
+export default MainSection;
