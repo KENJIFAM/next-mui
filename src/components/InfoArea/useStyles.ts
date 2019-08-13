@@ -11,7 +11,8 @@ import {
   title
 } from '../../styles/commonStyles';
 
-const useStyles = makeStyles(() => createStyles({  infoArea: {
+const useStyles = makeStyles(() => createStyles({
+  infoArea: {
     maxWidth: '360px',
     margin: '0 auto',
     padding: '0px'
@@ -50,12 +51,17 @@ const useStyles = makeStyles(() => createStyles({  infoArea: {
     color: grayColor,
     overflow: 'hidden'
   },
-  title,
+  title: {
+    ...title,
+    fontSize: '24px',
+    fontWeight: 500
+  },
   description: {
-    color: grayColor,
+    color: '#666',
     overflow: 'hidden',
     marginTop: '0px',
-    fontSize: '14px'
+    fontSize: '1rem',
+    fontWeight: 300
   },
   iconWrapperVertical: {
     float: 'none'
