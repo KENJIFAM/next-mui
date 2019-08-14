@@ -18,8 +18,8 @@ const Parallax: React.FC<Props> = props => {
   const classes = useStyles();
   const parallaxClasses = clsx({
     [classes.parallax]: true,
-    [classes.filter]: filter,
     [classes.small]: small,
+    [classes.filter]: filter,
     [className]: className !== undefined
   });
 

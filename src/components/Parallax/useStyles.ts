@@ -3,7 +3,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles = makeStyles(() => createStyles({
   parallax: {
-    height: '93vh',
+    height: '100vh',
     maxHeight: '1000px',
     overflow: 'hidden',
     position: 'relative',
@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => createStyles({
   },
   filter: {
     '&:before': {
-      background: 'rgba(0, 0, 0, 0.5)'
+      background: 'linear-gradient(45deg, rgba(42,27,161,0.8), rgba(29,210,177,0.8) 100%)'
     },
     '&:after,&:before': {
       position: 'absolute',
@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => createStyles({
       display: 'block',
       left: '0',
       top: '0',
-      content: '"'
+      content: '""'
     }
   },
   small: {
