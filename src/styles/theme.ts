@@ -202,10 +202,10 @@ const theme = createMuiTheme({
     },
     divider: 'rgba(0, 0, 0, 0.12)',
     secondary: {
-      main: '#f50057',
-      light: 'rgb(247, 51, 120)',
-      dark: 'rgb(171, 0, 60)',
-      contrastText: '#fff'
+      main: '#1dd2b1',
+      light: 'rgb(74, 237, 196)',
+      dark: 'rgb(20, 163, 127)',
+      contrastText: 'rgba(0, 0, 0, 0.87)'
     },
     common: { black: '#000', white: '#fff' },
     error: {
@@ -224,9 +224,9 @@ const theme = createMuiTheme({
       active: 'rgba(0, 0, 0, 0.54)'
     },
     primary: {
-      main: '#3f51b5',
-      light: 'rgb(101, 115, 195)',
-      dark: 'rgb(44, 56, 126)',
+      main: '#2a1ba1',
+      light: 'rgb(61, 107, 179)',
+      dark: 'rgb(9, 49, 112)',
       contrastText: '#fff'
     }
   }
