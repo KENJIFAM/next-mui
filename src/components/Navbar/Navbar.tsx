@@ -8,6 +8,7 @@ import Hidden from '@material-ui/core/Hidden';
 import Drawer from '@material-ui/core/Drawer';
 import Menu from '@material-ui/icons/Menu';
 import useStyles from './useStyles';
+import Link from '../Link';
 
 interface OwnProps {
   color?: Color;
@@ -68,7 +69,11 @@ const Navbar: React.FC<Props> = props => {
     return () => window.removeEventListener('scroll', headerColorChange);
   }, []);
 
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = (
+    <Button className={classes.title}>
+      <Link className={classes.link} href="/">{brand} </Link>
+    </Button>
+  );
   
   return (
     <AppBar className={appBarClasses}>

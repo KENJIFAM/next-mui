@@ -30,15 +30,15 @@ const useStyles = makeStyles(() => createStyles({
     alignItems: 'center',
     flexFlow: 'row nowrap',
     justifyContent: 'flex-start',
-    position: 'relative' as 'relative',
-    zIndex: 'unset' as 'unset'
+    position: 'relative',
+    zIndex: 'unset'
   },
   absolute: {
-    position: 'absolute' as 'absolute',
+    position: 'absolute',
     zIndex: 1100
   },
   fixed: {
-    position: 'fixed' as 'fixed',
+    position: 'fixed',
     zIndex: 1100
   },
   container: {
@@ -48,7 +48,7 @@ const useStyles = makeStyles(() => createStyles({
     alignItems: 'center',
     justifyContent: 'space-between',
     display: 'flex',
-    flexWrap: 'nowrap' as 'nowrap'
+    flexWrap: 'nowrap'
   },
   flex: {
     flex: 1
@@ -58,7 +58,8 @@ const useStyles = makeStyles(() => createStyles({
     lineHeight: '30px',
     fontSize: '18px',
     borderRadius: '3px',
-    textTransform: 'none' as 'none',
+    textTransform: 'none',
+    textDecoration: 'none',
     color: 'inherit',
     padding: '8px 16px',
     letterSpacing: 'unset',
@@ -108,8 +109,8 @@ const useStyles = makeStyles(() => createStyles({
   },
   transparent: {
     backgroundColor: 'transparent !important',
-    boxShadow: 'none',
-    paddingTop: '25px',
+    boxShadow:
+      '0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(0, 0, 0, 0.15)',
     color: '#FFFFFF'
   },
   dark: {
@@ -135,19 +136,27 @@ const useStyles = makeStyles(() => createStyles({
     transitionTimingFunction: 'linear, linear, ease',
     width: drawerWidth,
     ...boxShadow,
-    position: 'fixed' as 'fixed',
+    position: 'fixed',
     display: 'block',
     top: '0',
     height: '100vh',
     right: '0',
     left: 'auto',
-    visibility: 'visible' as 'visible',
-    overflowY: 'visible' as 'visible',
+    visibility: 'visible',
+    overflowY: 'visible',
     borderTop: 'none',
-    textAlign: 'left' as 'left',
+    textAlign: 'left',
     paddingRight: '0px',
     paddingLeft: '0',
     ...transition
+  },
+  link: {
+    textDecoration: 'none !important',
+    color: 'inherit !important',
+    '&:hover,&:focus': {
+      color: 'inherit !important',
+      textDecoration: 'none !important'
+    }
   }
 }));
 

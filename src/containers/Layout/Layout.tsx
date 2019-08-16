@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useRouter } from 'next/router';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import Box from '@material-ui/core/Box';
@@ -8,12 +9,18 @@ import Footer from '../../components/Footer';
 
 const Layout: React.FC = ({ children }) => {
   const classes = useStyles();
+  const router = useRouter();
   return (
     <>
       <Box>
         <Navbar
-          color="white"
-          brand={<img src="static/brand.jpg" />}
+          color={router.pathname === '/' ? 'transparent' : 'white'}
+          brand={(
+            <>
+              <img src="static/logo/color_logo_40.png" />
+              <span className={classes.brand}>STEPOUT</span>
+            </>
+          )}
           rightLinks={<NavbarLinks />}
           fixed
           changeColorOnScroll={{
@@ -31,8 +38,14 @@ const Layout: React.FC = ({ children }) => {
 };
 
 const useStyles = makeStyles(() => createStyles({
+  brand: {
+    marginLeft: '10px',
+    fontSize: '1.75rem',
+    fontFamily: 'Monoton',
+    paddingTop: '5px'
+  },
   content: {
-    marginTop: '76px'
+    marginTop: '0'
   },
   footer: {
     marginBottom: '30px',
