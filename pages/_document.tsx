@@ -39,13 +39,17 @@ class Document extends NextDocument {
           />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="format-detection" content="telephone=no" />
-          <link rel="shortcut icon" href="static/favicon.ico" />
+          <link rel="shortcut icon" href="static/logo/favicon.ico" />
           <meta name="application-name" content="StepOut" />
           <meta name="msapplication-TileColor" content={theme.palette.primary.main} />
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Monoton&display=swap"
+            rel="stylesheet"
           />
           {/* <link href="https://fonts.googleapis.com/css?family=Nunito:600,600i,700,800,900&display=swap" rel="stylesheet" /> */}
         </Head>
