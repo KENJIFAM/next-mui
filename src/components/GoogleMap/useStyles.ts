@@ -68,7 +68,7 @@ const useStyles = makeStyles(() => createStyles({
     }
   },
   bounce: {
-    animationName: 'bounce',
+    animationName: '$bounce',
     animationFillMode: 'both',
     animationDuration: '1s'
   },

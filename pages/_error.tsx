@@ -3,6 +3,7 @@ import PoopIcon from 'mdi-material-ui/EmoticonPoop';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Link from '../src/components/Link';
+import Button from '../src/components/Button';
 import { GridContainer, GridItem } from '../src/components/Grid';
 
 interface OwnProps {
@@ -34,9 +35,11 @@ class Error extends React.Component<Props> {
                   ? `${this.props.statusCode} | Page not found`
                   : 'An error occurred on client'}
               </Typography>
-              <Typography variant="h6" gutterBottom>
-                <Link color="primary" href="/" style={{ textDecoration: 'none' }}>Go back to Homepage</Link>
-              </Typography>
+              <Button color="primary" round>
+                <Link color="inherit" href="/" style={{ textDecoration: 'none' }}>
+                  <strong>Go back to Homepage</strong>
+                </Link>
+              </Button>
             </GridItem> 
           </GridContainer>
         </Container>
