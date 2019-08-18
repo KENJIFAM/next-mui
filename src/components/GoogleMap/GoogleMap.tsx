@@ -29,7 +29,7 @@ const GoogleMap: React.FC<Props> = props => {
           height: '400px',
           width: '100%',
           boxShadow:
-            '0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19)'
+            '0 6px 10px 0 rgba(0,0,0,.2), 0 4px 12px 0 rgba(0,0,0,.19)'
         }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: process.env.GOOGLE_MAP_KEY || '' }}
