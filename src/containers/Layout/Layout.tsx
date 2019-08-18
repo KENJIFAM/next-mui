@@ -24,7 +24,7 @@ const Layout: React.FC = ({ children }) => {
           rightLinks={<NavbarLinks />}
           fixed
           changeColorOnScroll={{
-            height: 400,
+            height: 200,
             color: 'white'
           }}
         />
@@ -40,7 +40,7 @@ const Layout: React.FC = ({ children }) => {
 const useStyles = makeStyles(() => createStyles({
   brand: {
     marginLeft: '10px',
-    fontSize: '1.75rem',
+    fontSize: '1.65rem',
     fontWeight: 400
   },
   content: {

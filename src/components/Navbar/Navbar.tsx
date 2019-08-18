@@ -41,23 +41,23 @@ const Navbar: React.FC<Props> = props => {
 
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
 
-  const removeClassColor = (colorClass: Color) => document.body
+  const removeClass = (...className: string[]) => document.body
     .getElementsByTagName('header')[0]
-    .classList.remove(classes[colorClass]);
+    .classList.remove(...className);
 
-  const addClassColor = (colorClass: Color) => document.body
+  const addClass = (...className: string[]) => document.body
     .getElementsByTagName('header')[0]
-    .classList.add(classes[colorClass]);
+    .classList.add(...className);
   
   const headerColorChange = () => {
     const { changeColorOnScroll } = props;
     const windowsScrollTop = window.pageYOffset;
     if (windowsScrollTop > changeColorOnScroll!.height) {
-      removeClassColor(color);
-      addClassColor(changeColorOnScroll!.color);
+      removeClass(classes[color]);
+      addClass(classes[changeColorOnScroll!.color], classes.paddingOnScroll);
     } else {
-      removeClassColor(changeColorOnScroll!.color);
-      addClassColor(color);
+      removeClass(classes[changeColorOnScroll!.color], classes.paddingOnScroll);
+      addClass(classes[color]);
     }
   };
 

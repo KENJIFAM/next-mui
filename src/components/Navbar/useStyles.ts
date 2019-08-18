@@ -53,6 +53,9 @@ const useStyles = makeStyles(() => createStyles({
   flex: {
     flex: 1
   },
+  paddingOnScroll: {
+    padding: '0.25rem 0 !important'
+  },
   title: {
     ...defaultFont,
     lineHeight: '30px',
