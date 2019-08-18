@@ -17,8 +17,8 @@ const Layout: React.FC = ({ children }) => {
           color={router.pathname === '/' ? 'transparent' : 'white'}
           brand={(
             <>
-              <img src="static/logo/color_logo_40.png" />
-              <span className={classes.brand}>STEPOUT</span>
+              <img src="static/color_logo_40.png" />
+              <span className={classes.brand}>Next Mui App</span>
             </>
           )}
           rightLinks={<NavbarLinks />}
@@ -41,7 +41,6 @@ const useStyles = makeStyles(() => createStyles({
   brand: {
     marginLeft: '10px',
     fontSize: '1.75rem',
-    fontFamily: 'Monoton',
     paddingTop: '5px'
   },
   content: {

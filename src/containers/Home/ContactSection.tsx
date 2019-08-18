@@ -25,7 +25,7 @@ const ContactSection: React.FC = () => {
                         <LocationOnRounded className={classes.icon} />
                       </div>
                       <div className={classes.contactDetail}>
-                        Otakaari 5, 02150 Espoo
+                        Address xxx, 01234 Helsinki
                       </div>
                     </GridItem>
                     <GridItem xs={12} className={classes.contact}>
@@ -33,7 +33,7 @@ const ContactSection: React.FC = () => {
                         <CallRounded className={classes.icon} />
                       </div>
                       <div className={classes.contactDetail}>
-                        +358 404 567 xxx
+                        +358 123 456 789
                       </div>
                     </GridItem>
                     <GridItem xs={12} className={classes.contact}>
@@ -41,15 +41,15 @@ const ContactSection: React.FC = () => {
                         <EmailRounded className={classes.icon} />
                       </div>
                       <div className={classes.contactDetail}>
-                        contact@stepout.fi
+                        example@email.com
                       </div>
                     </GridItem>
                   </GridContainer>
                 </GridItem>
                 <GridItem xs={12} sm={12} md={8}>
                   <GoogleMap
-                    lat={60.188938}
-                    lng={24.8301198}
+                    lat={60.1718723}
+                    lng={24.94142058}
                     name="Otakaari 5, 02150 Espoo"
                     color={primaryColor}
                     zoom={15}

@@ -39,8 +39,8 @@ class Document extends NextDocument {
           />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="format-detection" content="telephone=no" />
-          <link rel="shortcut icon" href="static/logo/favicon.ico" />
-          <meta name="application-name" content="StepOut" />
+          <link rel="shortcut icon" href="static/favicon.ico" />
+          <meta name="application-name" content="NextMui" />
           <meta name="msapplication-TileColor" content={theme.palette.primary.main} />
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link

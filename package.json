@@ -1,5 +1,5 @@
 {
-  "name": "stepout-ui",
+  "name": "next-mui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,19 +8,19 @@
     "build": "next build",
     "export": "next export",
     "start": "next start -p $PORT",
-    "deploy": "npm run build & gcloud --project stepoutapp app deploy"
+    "deploy": "npm run build & gcloud --quiet --project next-mui app deploy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KENJIFAM/stepout-ui.git"
+    "url": "git+https://github.com/KENJIFAM/next-mui.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KENJIFAM/stepout-ui/issues"
+    "url": "https://github.com/KENJIFAM/next-mui/issues"
   },
-  "homepage": "https://github.com/KENJIFAM/stepout-ui#readme",
+  "homepage": "https://github.com/KENJIFAM/next-mui#readme",
   "dependencies": {
     "@material-ui/core": "^4.3.1",
     "@material-ui/icons": "^4.2.1",

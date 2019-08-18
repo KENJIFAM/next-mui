@@ -13,10 +13,7 @@ const AboutSection: React.FC = () => {
           <GridItem xs={12} sm={12} md={10}>
             <h2 className={classes.title}>About Us</h2>
             <h5 className={classes.description}>
-              We are a start-up based in Helsinki, Finland.
-              At StepOut, we are on a mission to create a network of fitness & recreational art schools, trainers, dancers, and various physical art forms & mental well-being activities. <br />
-              This platform is for the crazy ones who want to try out new fitness/dance/recreational regimes every day, for the lazy ones who want to lead a healthy life but do not seem to find the motivation to get it done somewhere nearby, for the ones who are bored of their daily gym routine. Here's the twist we will get you to the corners of your city holding immense talent with a single weekly or monthly subscription. <br />
-              STEP-OUT is a feeling - a feeling to just step out (of your comfort zone) and do it!
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
             </h5>
           </GridItem>
         </GridContainer>

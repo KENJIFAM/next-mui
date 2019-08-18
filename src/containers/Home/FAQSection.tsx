@@ -15,12 +15,12 @@ const FAQSection: React.FC = () => {
             <div>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={6}>
-                  <h4 className={classes.question}>How do I register?</h4>
-                  <p className={classes.answer}>The feature is coming out soon.</p>
+                  <h4 className={classes.question}>Lorem ipsum dolor sit amet?</h4>
+                  <p className={classes.answer}>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
-                  <h4 className={classes.question}>How much is a subscription?</h4>
-                  <p className={classes.answer}>The packs have been mentioned in the "plans" section. The details are coming out soon.</p>
+                  <h4 className={classes.question}>Duis aute irure dolor in reprehenderit?</h4>
+                  <p className={classes.answer}>In voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </GridItem>
               </GridContainer>
             </div>

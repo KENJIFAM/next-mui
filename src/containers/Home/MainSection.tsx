@@ -20,10 +20,10 @@ const MainSection: React.FC = () => {
             alignItems="baseline"
           >
             <GridItem xs={12}>
-              <h1 className={classes.title}>Introducing StepOut</h1>
+              <h1 className={classes.title}>Next Mui App</h1>
               <h4 className={classes.text}>
-                Looking for a trainer or being a trainer? <br />
-                Your one-stop destination to fitness & recreation.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </h4>
               <Fab
                 variant="extended"

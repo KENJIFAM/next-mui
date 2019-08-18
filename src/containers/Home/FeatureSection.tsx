@@ -15,7 +15,7 @@ const FeatureSection: React.FC = () => {
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>What if you could join any fitness class with just one app?</h2>
+            <h2 className={classes.title}>Feature</h2>
             <h5 className={classes.description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </h5>

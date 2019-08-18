@@ -13,7 +13,7 @@ const RegisterSection: React.FC = () => {
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={10}>
-            <h2 className={classes.title}>Register as a coach/trainer with us!</h2>
+            <h2 className={classes.title}>Send us a message?</h2>
             <form>
               <GridContainer className={classes.form}>
                 <GridItem xs={12} sm={12} md={6}>
