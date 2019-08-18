@@ -151,6 +151,8 @@ const useStyles = makeStyles(() => createStyles({
     ...transition
   },
   link: {
+    display: 'flex',
+    alignItems: 'center',
     textDecoration: 'none !important',
     color: 'inherit !important',
     '&:hover,&:focus': {

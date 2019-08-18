@@ -41,7 +41,7 @@ const useStyles = makeStyles(() => createStyles({
   brand: {
     marginLeft: '10px',
     fontSize: '1.75rem',
-    paddingTop: '5px'
+    fontWeight: 400
   },
   content: {
     marginTop: '0'
