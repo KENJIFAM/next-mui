@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => createStyles({
   },
   filter: {
     '&:before': {
-      background: 'linear-gradient(45deg, rgba(42,27,161,0.8), rgba(29,210,177,0.8) 100%)'
+      background: 'linear-gradient(10deg, rgba(29,210,177,0.7) 10%, rgba(42,27,161,0.8) 90%)'
     },
     '&:after,&:before': {
       position: 'absolute',

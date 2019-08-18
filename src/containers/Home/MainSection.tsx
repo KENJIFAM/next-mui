@@ -2,9 +2,9 @@ import React from 'react';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Fab from '@material-ui/core/Fab';
 import NavigationIcon from '@material-ui/icons/Navigation';
 import Parallax from '../../components/Parallax';
+import Button from '../../components/Button';
 import { GridContainer, GridItem } from '../../components/Grid';
 import { container, title } from '../../styles/commonStyles';
 
@@ -25,14 +25,10 @@ const MainSection: React.FC = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
                 Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </h4>
-              <Fab
-                variant="extended"
-                color="primary"
-                aria-label="add"
-              >
+              <Button color="primary" round>
                 <NavigationIcon className={classes.extendedIcon} />
                 <span className={classes.extendedText}>GET STARTED</span>
-              </Fab>
+              </Button>
             </GridItem>
           </GridContainer>
         </div>
